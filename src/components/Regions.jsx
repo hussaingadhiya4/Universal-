@@ -1,8 +1,8 @@
-export default function Feature({ props }) {
-  const { anchor, title, description, features } = props;
+export default function Regions({ props }) {
+  const { anchor, title, description, regions } = props;
 
   return (
-    <section id={anchor} style={{ padding: '5rem 1.5rem', backgroundColor: 'white' }}>
+    <section id={anchor} style={{ padding: '5rem 1.5rem', backgroundColor: 'var(--gray-50)' }}>
       <div style={{ maxWidth: '80rem', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{
@@ -16,27 +16,28 @@ export default function Feature({ props }) {
           <p style={{
             fontSize: '1.125rem',
             color: 'var(--text-light)',
-            maxWidth: '48rem',
-            margin: '0 auto',
-            lineHeight: 1.7
+            maxWidth: '42rem',
+            margin: '0 auto'
           }}>
             {description}
           </p>
         </div>
+
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '2rem'
         }}>
-          {features.map((feature, idx) => (
+          {regions.map((region, idx) => (
             <div
               key={idx}
               style={{
-                padding: '2rem',
-                backgroundColor: 'white',
+                background: 'white',
                 borderRadius: '1rem',
-                transition: 'all 0.3s ease',
+                padding: '2.5rem 2rem',
+                textAlign: 'center',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+                transition: 'all 0.3s ease',
                 border: '2px solid transparent'
               }}
               onMouseEnter={(e) => {
@@ -50,21 +51,27 @@ export default function Feature({ props }) {
                 e.currentTarget.style.borderColor = 'transparent';
               }}
             >
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>{feature.icon}</div>
+              <div style={{
+                fontSize: '4rem',
+                marginBottom: '1rem',
+                filter: 'grayscale(20%)'
+              }}>
+                {region.icon}
+              </div>
               <h3 style={{
-                fontSize: '1.25rem',
+                fontSize: '1.5rem',
                 fontWeight: 700,
                 color: 'var(--text-color)',
                 marginBottom: '0.75rem'
               }}>
-                {feature.title}
+                {region.name}
               </h3>
               <p style={{
                 color: 'var(--text-light)',
-                fontSize: '1rem',
-                lineHeight: 1.7
+                fontSize: '0.9375rem',
+                lineHeight: 1.6
               }}>
-                {feature.text}
+                {region.countries}
               </p>
             </div>
           ))}
