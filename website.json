@@ -1,0 +1,294 @@
+{
+  "site": {
+    "title": "Universal - Global Import & Export Solutions",
+    "meta": {
+      "title": "Universal – Global Import & Export Solutions",
+      "description": "Universal provides end-to-end import & export services across continents, specialising in logistics, compliance and sourcing.",
+      "author": "Universal"
+    },
+    "theme": {
+      "palette": {
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "muted": "#6B7280",
+        "accent": "#005f7f",
+        "accentDark": "#004e66"
+      },
+      "fonts": {
+        "heading": "Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+        "body": "Roboto, system-ui, -apple-system, 'Segoe UI', Arial"
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "title": "Universal - Home",
+      "sections": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "props": {
+            "backgroundType": "image",
+            "backgroundImage": "PLACEHOLDER_HERO_IMAGE_URL",
+            "overlay": true,
+            "overlayColor": "rgba(0,0,0,0.35)",
+            "headline": "Connecting Markets. Delivering Possibilities.",
+            "subheadline": "Universal — Your trusted partner in global import & export.",
+            "primaryCta": {
+              "label": "Explore Our Services",
+              "href": "#services"
+            },
+            "secondaryCta": {
+              "label": "Get a Quote",
+              "href": "#contact"
+            },
+            "styles": {
+              "container": "min-h-screen flex items-center justify-center px-6 lg:px-24",
+              "content": "text-center max-w-3xl",
+              "headline": "text-4xl lg:text-5xl font-extrabold text-white leading-tight",
+              "subheadline": "mt-4 text-lg lg:text-xl text-gray-100",
+              "ctaPrimary": "mt-8 inline-block px-6 py-3 rounded-2xl font-semibold bg-accent hover:bg-accentDark text-white shadow-lg",
+              "ctaSecondary": "ml-3 inline-block px-5 py-3 rounded-full border border-white text-white hover:bg-white hover:text-accent transition"
+            }
+          }
+        },
+        {
+          "id": "about",
+          "type": "feature",
+          "props": {
+            "anchor": "about",
+            "title": "About Universal",
+            "description": "With years of expertise in freight forwarding, global sourcing and trade consultancy, Universal helps businesses bridge borders with seamless logistics and reliable supply-chain support.",
+            "features": [
+              { "icon": "🌐", "title": "Global Reach", "text": "Partners and operations across major trade hubs." },
+              { "icon": "✅", "title": "Trusted Compliance", "text": "Accurate documentation, customs clearance and certifications." },
+              { "icon": "🤝", "title": "Customer-first", "text": "Dedicated account manager for your shipments." },
+              { "icon": "⚙️", "title": "End-to-end Logistics", "text": "From sourcing and packing to warehousing and delivery." }
+            ],
+            "styles": {
+              "container": "py-16 px-6 lg:px-24 bg-white",
+              "title": "text-3xl font-bold text-gray-900",
+              "description": "mt-4 text-gray-600 max-w-2xl",
+              "grid": "mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6"
+            }
+          }
+        },
+        {
+          "id": "services",
+          "type": "cards",
+          "props": {
+            "anchor": "services",
+            "title": "Our Services",
+            "subtitle": "Comprehensive trade and logistics services tailored to your needs.",
+            "cards": [
+              {
+                "title": "Global Sourcing & Procurement",
+                "text": "Connect to trusted manufacturers and suppliers worldwide for quality products and competitive pricing.",
+                "icon": "🛒"
+              },
+              {
+                "title": "Import & Export Logistics",
+                "text": "End-to-end shipping, customs clearance, warehousing and final-mile delivery.",
+                "icon": "🚢"
+              },
+              {
+                "title": "Trade Compliance & Consultancy",
+                "text": "Expert guidance on duties, documentation, certifications and international standards.",
+                "icon": "📄"
+              },
+              {
+                "title": "Supply Chain Optimization",
+                "text": "Streamline costs, improve visibility and manage risk across your supply chain.",
+                "icon": "📈"
+              }
+            ],
+            "styles": {
+              "container": "py-16 px-6 lg:px-24 bg-gray-50",
+              "title": "text-3xl font-bold text-gray-900 text-center",
+              "subtitle": "mt-2 text-gray-600 text-center max-w-3xl mx-auto",
+              "grid": "mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            }
+          }
+        },
+        {
+          "id": "why",
+          "type": "split",
+          "props": {
+            "anchor": "why",
+            "title": "Why Partner with Universal?",
+            "points": [
+              { "title": "Extensive Network", "text": "Presence across continents with trusted partners in key markets." },
+              { "title": "On-time Delivery", "text": "Consistent performance and real-time shipment tracking." },
+              { "title": "Transparent Pricing", "text": "Clear quotes with no hidden fees." },
+              { "title": "Dedicated Support", "text": "Account-based servicing and a results-oriented approach." }
+            ],
+            "image": "PLACEHOLDER_WHY_IMAGE_URL",
+            "styles": {
+              "container": "py-16 px-6 lg:px-24 flex flex-col lg:flex-row items-center gap-8",
+              "left": "lg:w-1/2",
+              "right": "lg:w-1/2",
+              "title": "text-3xl font-bold text-gray-900",
+              "pointTitle": "font-semibold text-gray-800",
+              "pointText": "text-gray-600 mt-1"
+            }
+          }
+        },
+        {
+          "id": "industries",
+          "type": "grid",
+          "props": {
+            "anchor": "industries",
+            "title": "Our Trade Focus",
+            "items": [
+              { "title": "Electronics", "image": "PLACEHOLDER_INDUSTRY_IMAGE_1" },
+              { "title": "Textiles", "image": "PLACEHOLDER_INDUSTRY_IMAGE_2" },
+              { "title": "Agro Commodities", "image": "PLACEHOLDER_INDUSTRY_IMAGE_3" },
+              { "title": "Industrial Components", "image": "PLACEHOLDER_INDUSTRY_IMAGE_4" }
+            ],
+            "styles": {
+              "container": "py-16 px-6 lg:px-24 bg-white",
+              "title": "text-2xl font-bold text-gray-900 text-center",
+              "grid": "mt-8 grid grid-cols-2 md:grid-cols-4 gap-4"
+            }
+          }
+        },
+        {
+          "id": "map",
+          "type": "media",
+          "props": {
+            "anchor": "reach",
+            "title": "Our Global Footprint",
+            "description": "With offices and partners across major trade hubs — we ensure trade flows smoothly across borders.",
+            "mediaType": "image",
+            "media": "PLACEHOLDER_WORLD_MAP_IMAGE_URL",
+            "locations": ["India", "UAE", "Europe", "Africa", "Southeast Asia"],
+            "styles": {
+              "container": "py-12 px-6 lg:px-24 bg-gray-50 text-center",
+              "title": "text-2xl font-bold text-gray-900",
+              "description": "mt-2 text-gray-600",
+              "map": "mt-6 max-w-4xl mx-auto rounded-lg overflow-hidden shadow"
+            }
+          }
+        },
+        {
+          "id": "clients",
+          "type": "carousel",
+          "props": {
+            "title": "Our Clients & Partners",
+            "logos": ["PLACEHOLDER_CLIENT_LOGO_1", "PLACEHOLDER_CLIENT_LOGO_2", "PLACEHOLDER_CLIENT_LOGO_3", "PLACEHOLDER_CLIENT_LOGO_4"],
+            "styles": {
+              "container": "py-8 px-6 lg:px-24 bg-white",
+              "title": "text-lg font-semibold text-gray-800 text-center",
+              "carousel": "mt-6 flex items-center justify-center gap-6"
+            }
+          }
+        },
+        {
+          "id": "testimonials",
+          "type": "testimonials",
+          "props": {
+            "anchor": "testimonials",
+            "title": "What Our Partners Say",
+            "items": [
+              { "quote": "Universal handled our shipments with professionalism and delivered on time—every time.", "name": "Anita Rao", "company": "Rao Textiles", "photo": "PLACEHOLDER_TESTIMONIAL_PHOTO_1" },
+              { "quote": "Excellent communication and transparent pricing. Strongly recommended for international sourcing.", "name": "Omar Siddiqui", "company": "Siddiqui Electronics", "photo": "PLACEHOLDER_TESTIMONIAL_PHOTO_2" }
+            ],
+            "styles": {
+              "container": "py-12 px-6 lg:px-24 bg-gray-50",
+              "title": "text-2xl font-bold text-gray-900 text-center",
+              "carousel": "mt-6 max-w-4xl mx-auto"
+            }
+          }
+        },
+        {
+          "id": "contact",
+          "type": "contact",
+          "props": {
+            "anchor": "contact",
+            "title": "Let’s Start Your Global Trade Journey",
+            "subtitle": "Tell us about your requirements and we’ll get back with a customised plan and quote.",
+            "formFields": [
+              { "name": "name", "label": "Full Name", "type": "text", "required": true },
+              { "name": "company", "label": "Company", "type": "text", "required": false },
+              { "name": "email", "label": "Email", "type": "email", "required": true },
+              { "name": "phone", "label": "Phone", "type": "tel", "required": false },
+              { "name": "message", "label": "Message", "type": "textarea", "required": true }
+            ],
+            "contactDetails": {
+              "email": "info@PLACEHOLDER_DOMAIN.com",
+              "phone": "PLACEHOLDER_PHONE",
+              "address": "Office Address Line 1, City, Country"
+            },
+            "brochure": {
+              "label": "Download Company Brochure",
+              "href": "PLACEHOLDER_BROCHURE_URL"
+            },
+            "styles": {
+              "container": "py-16 px-6 lg:px-24 bg-white",
+              "title": "text-2xl font-bold text-gray-900",
+              "subtitle": "mt-2 text-gray-600",
+              "form": "mt-8 grid grid-cols-1 md:grid-cols-2 gap-4",
+              "input": "w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
+            }
+          }
+        },
+        {
+          "id": "cta-strip",
+          "type": "cta",
+          "props": {
+            "text": "Ready to move goods across borders? Let Universal be your logistics partner.",
+            "cta": { "label": "Get a Quote", "href": "#contact" },
+            "styles": {
+              "container": "py-8 px-6 lg:px-24 bg-accent text-white rounded-t-xl",
+              "text": "text-lg font-semibold",
+              "cta": "ml-4 inline-block px-5 py-2 rounded-full bg-white text-accent font-semibold hover:opacity-95"
+            }
+          }
+        },
+        {
+          "id": "footer",
+          "type": "footer",
+          "props": {
+            "logo": "PLACEHOLDER_LOGO_URL",
+            "tagline": "Universal — Connecting markets, delivering possibilities.",
+            "links": [
+              { "label": "Home", "href": "/" },
+              { "label": "About", "href": "#about" },
+              { "label": "Services", "href": "#services" },
+              { "label": "Contact", "href": "#contact" }
+            ],
+            "legal": [
+              { "label": "Privacy Policy", "href": "/privacy" },
+              { "label": "Terms of Use", "href": "/terms" }
+            ],
+            "copyright": "© 2025 Universal. All rights reserved.",
+            "styles": {
+              "container": "py-8 px-6 lg:px-24 bg-gray-900 text-gray-200",
+              "top": "flex flex-col md:flex-row items-center justify-between gap-6",
+              "links": "flex gap-4",
+              "legal": "mt-4 text-sm text-gray-400"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "globalScripts": [],
+    "seo": {
+      "homepageTitle": "Universal – Global Import & Export Solutions",
+      "homepageDescription": "End-to-end import & export services: sourcing, logistics, customs clearance and supply-chain optimisation."
+    },
+    "performance": {
+      "imageLazyLoad": true,
+      "compressImages": true
+    },
+    "accessibility": {
+      "altRequired": true,
+      "colorContrastChecks": true,
+      "keyboardNav": true
+    }
+  }
+}
