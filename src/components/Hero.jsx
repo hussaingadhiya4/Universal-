@@ -41,7 +41,7 @@ export default function Hero({ props }) {
         background: 'radial-gradient(circle, rgba(240, 147, 251, 0.3) 0%, transparent 70%)',
         borderRadius: '50%',
         filter: 'blur(60px)',
-        animation: 'float 8s ease-in-out infinite'
+        animation: 'float 12s ease-in-out infinite'
       }} />
 
       <div style={{
@@ -53,7 +53,7 @@ export default function Hero({ props }) {
         background: 'radial-gradient(circle, rgba(79, 172, 254, 0.3) 0%, transparent 70%)',
         borderRadius: '50%',
         filter: 'blur(60px)',
-        animation: 'float 10s ease-in-out infinite reverse'
+        animation: 'float 15s ease-in-out infinite reverse'
       }} />
 
       <div style={{
@@ -65,7 +65,7 @@ export default function Hero({ props }) {
         gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
         gap: '4rem',
         alignItems: 'center',
-        animation: loaded ? 'fadeInUp 1s ease forwards' : 'none'
+        animation: loaded ? 'fadeInUp 1.5s ease forwards' : 'none'
       }}>
         <div style={{
           textAlign: 'left'
@@ -79,7 +79,7 @@ export default function Hero({ props }) {
             backgroundClip: 'text',
             fontWeight: 700,
             marginBottom: '2rem',
-            animation: loaded ? 'fadeIn 1.5s ease 0.3s forwards' : 'none',
+            animation: loaded ? 'fadeIn 2s ease 0.5s forwards' : 'none',
             opacity: loaded ? 1 : 0,
             textTransform: 'uppercase'
           }}>
@@ -92,7 +92,7 @@ export default function Hero({ props }) {
             color: 'white',
             lineHeight: 1.1,
             marginBottom: '1.5rem',
-            animation: loaded ? 'fadeInUp 1s ease 0.5s forwards' : 'none',
+            animation: loaded ? 'fadeInUp 1.5s ease 0.8s forwards' : 'none',
             opacity: loaded ? 1 : 0,
             textShadow: '0 4px 30px rgba(102, 126, 234, 0.5), 0 2px 10px rgba(0, 0, 0, 0.5)'
           }}>
@@ -104,7 +104,7 @@ export default function Hero({ props }) {
             color: 'var(--text-light)',
             marginBottom: '3rem',
             lineHeight: 1.7,
-            animation: loaded ? 'fadeInUp 1s ease 0.7s forwards' : 'none',
+            animation: loaded ? 'fadeInUp 1.5s ease 1.1s forwards' : 'none',
             opacity: loaded ? 1 : 0
           }}>
             {subheadline}
@@ -114,7 +114,7 @@ export default function Hero({ props }) {
             display: 'flex',
             gap: '1.25rem',
             flexWrap: 'wrap',
-            animation: loaded ? 'fadeInUp 1s ease 0.9s forwards' : 'none',
+            animation: loaded ? 'fadeInUp 1.5s ease 1.4s forwards' : 'none',
             opacity: loaded ? 1 : 0
           }}>
             <a
@@ -175,7 +175,7 @@ export default function Hero({ props }) {
 
         <div style={{
           position: 'relative',
-          animation: loaded ? 'slideInRight 1.2s ease 0.5s forwards' : 'none',
+          animation: loaded ? 'slideInRight 1.8s ease 0.8s forwards' : 'none',
           opacity: loaded ? 1 : 0
         }}>
           <div style={{
@@ -268,7 +268,7 @@ export default function Hero({ props }) {
             background: 'linear-gradient(135deg, #667eea 0%, #f093fb 100%)',
             borderRadius: '1rem',
             boxShadow: '0 15px 40px rgba(102, 126, 234, 0.6)',
-            animation: 'pulse 3s ease-in-out infinite'
+            animation: 'pulse 4s ease-in-out infinite'
           }}>
             <div style={{
               fontSize: '1.75rem',
