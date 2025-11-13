@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import TransparentLogo from './TransparentLogo';
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,13 +46,13 @@ export default function Navigation() {
         justifyContent: 'space-between'
       }}>
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <img
+          <TransparentLogo
             src="/Final approved image.jpg"
             alt="Universal"
             style={{
               height: scrolled ? '45px' : '55px',
               transition: 'height 0.4s ease',
-              filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%) drop-shadow(0 4px 12px rgba(102, 126, 234, 0.5))'
+              filter: 'drop-shadow(0 4px 12px rgba(102, 126, 234, 0.5))'
             }}
           />
         </a>
