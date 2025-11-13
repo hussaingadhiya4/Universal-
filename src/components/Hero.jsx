@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import TransparentLogo from './TransparentLogo';
 
 export default function Hero({ props }) {
-  const { logo, tagline, headline, subheadline, primaryCta, secondaryCta, backgroundImage } = props;
+  const { tagline, headline, subheadline, primaryCta, secondaryCta, backgroundImage } = props;
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -65,26 +64,6 @@ export default function Hero({ props }) {
         padding: '0 1.5rem',
         animation: loaded ? 'fadeInUp 1s ease forwards' : 'none'
       }}>
-        <div style={{
-          marginBottom: '2.5rem',
-          animation: loaded ? 'scaleIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards' : 'none'
-        }}>
-          <TransparentLogo
-            src={logo}
-            alt="Universal"
-            style={{
-              maxWidth: '450px',
-              width: '100%',
-              height: 'auto',
-              margin: '0 auto',
-              filter: 'drop-shadow(0 20px 40px rgba(102, 126, 234, 0.6)) drop-shadow(0 10px 20px rgba(240, 147, 251, 0.4))'
-            }}
-            containerStyle={{
-              display: 'inline-block'
-            }}
-          />
-        </div>
-
         <div style={{
           fontSize: 'clamp(0.875rem, 2vw, 1.125rem)',
           letterSpacing: '0.3em',
