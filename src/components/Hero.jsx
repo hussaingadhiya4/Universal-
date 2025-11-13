@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function Hero({ props }) {
-  const { logo, tagline, headline, subheadline, primaryCta, secondaryCta, backgroundImage, overlay, overlayColor } = props;
+  const { logo, tagline, headline, subheadline, primaryCta, secondaryCta, backgroundImage } = props;
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -20,22 +20,38 @@ export default function Hero({ props }) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '80px'
+        paddingTop: '80px',
+        overflow: 'hidden'
       }}
     >
-      {overlay && (
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: `linear-gradient(135deg, ${overlayColor} 0%, rgba(22, 58, 95, 0.9) 100%)`,
-          backdropFilter: 'blur(2px)'
-        }} />
-      )}
-
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'radial-gradient(circle at 30% 50%, rgba(200, 165, 104, 0.15) 0%, transparent 50%)'
+        background: 'linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(26, 31, 58, 0.9) 50%, rgba(102, 126, 234, 0.3) 100%)'
+      }} />
+
+      <div style={{
+        position: 'absolute',
+        top: '10%',
+        right: '10%',
+        width: '400px',
+        height: '400px',
+        background: 'radial-gradient(circle, rgba(240, 147, 251, 0.3) 0%, transparent 70%)',
+        borderRadius: '50%',
+        filter: 'blur(60px)',
+        animation: 'float 8s ease-in-out infinite'
+      }} />
+
+      <div style={{
+        position: 'absolute',
+        bottom: '20%',
+        left: '10%',
+        width: '350px',
+        height: '350px',
+        background: 'radial-gradient(circle, rgba(79, 172, 254, 0.3) 0%, transparent 70%)',
+        borderRadius: '50%',
+        filter: 'blur(60px)',
+        animation: 'float 10s ease-in-out infinite reverse'
       }} />
 
       <div style={{
@@ -47,18 +63,25 @@ export default function Hero({ props }) {
         animation: loaded ? 'fadeInUp 1s ease forwards' : 'none'
       }}>
         <div style={{
-          marginBottom: '2rem',
-          animation: loaded ? 'scaleIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards' : 'none'
+          marginBottom: '2.5rem',
+          animation: loaded ? 'scaleIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards' : 'none',
+          background: 'rgba(255, 255, 255, 0.03)',
+          backdropFilter: 'blur(20px)',
+          padding: '2rem',
+          borderRadius: '2rem',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          display: 'inline-block'
         }}>
           <img
             src={logo}
             alt="Universal"
             style={{
-              maxWidth: '400px',
+              maxWidth: '450px',
               width: '100%',
               height: 'auto',
               margin: '0 auto',
-              filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3))'
+              mixBlendMode: 'screen',
+              filter: 'brightness(1.2) contrast(1.1) drop-shadow(0 20px 40px rgba(102, 126, 234, 0.4)) drop-shadow(0 10px 20px rgba(240, 147, 251, 0.3))'
             }}
           />
         </div>
@@ -66,45 +89,48 @@ export default function Hero({ props }) {
         <div style={{
           fontSize: 'clamp(0.875rem, 2vw, 1.125rem)',
           letterSpacing: '0.3em',
-          color: 'var(--gold)',
-          fontWeight: 600,
-          marginBottom: '1.5rem',
+          background: 'linear-gradient(135deg, #ffd89b 0%, #f093fb 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          fontWeight: 700,
+          marginBottom: '2rem',
           animation: loaded ? 'fadeIn 1.5s ease 0.3s forwards' : 'none',
-          opacity: loaded ? 1 : 0
+          opacity: loaded ? 1 : 0,
+          textTransform: 'uppercase'
         }}>
           {tagline}
         </div>
 
         <h1 style={{
-          fontSize: 'clamp(1.75rem, 5vw, 3.5rem)',
-          fontWeight: 800,
+          fontSize: 'clamp(1.75rem, 5vw, 4rem)',
+          fontWeight: 900,
           color: 'white',
-          lineHeight: 1.2,
+          lineHeight: 1.1,
           marginBottom: '1.5rem',
           animation: loaded ? 'fadeInUp 1s ease 0.5s forwards' : 'none',
           opacity: loaded ? 1 : 0,
-          textShadow: '0 4px 20px rgba(0, 0, 0, 0.4)'
+          textShadow: '0 4px 30px rgba(102, 126, 234, 0.5), 0 2px 10px rgba(0, 0, 0, 0.5)'
         }}>
           {headline}
         </h1>
 
         <p style={{
-          fontSize: 'clamp(1rem, 2vw, 1.375rem)',
-          color: 'rgba(255, 255, 255, 0.95)',
-          marginBottom: '2.5rem',
-          maxWidth: '50rem',
-          margin: '0 auto 2.5rem',
+          fontSize: 'clamp(1rem, 2vw, 1.5rem)',
+          color: 'var(--text-light)',
+          marginBottom: '3rem',
+          maxWidth: '55rem',
+          margin: '0 auto 3rem',
           lineHeight: 1.7,
           animation: loaded ? 'fadeInUp 1s ease 0.7s forwards' : 'none',
-          opacity: loaded ? 1 : 0,
-          textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)'
+          opacity: loaded ? 1 : 0
         }}>
           {subheadline}
         </p>
 
         <div style={{
           display: 'flex',
-          gap: '1rem',
+          gap: '1.25rem',
           justifyContent: 'center',
           flexWrap: 'wrap',
           animation: loaded ? 'fadeInUp 1s ease 0.9s forwards' : 'none',
@@ -114,23 +140,23 @@ export default function Hero({ props }) {
             href={primaryCta.href}
             style={{
               display: 'inline-block',
-              padding: '1rem 2.5rem',
-              borderRadius: '0.75rem',
+              padding: '1.125rem 3rem',
+              borderRadius: '1rem',
               fontWeight: 700,
-              fontSize: '1.0625rem',
-              background: 'linear-gradient(135deg, var(--gold) 0%, #B89554 100%)',
+              fontSize: '1.125rem',
+              background: 'linear-gradient(135deg, #667eea 0%, #f093fb 100%)',
               color: 'white',
-              boxShadow: '0 10px 30px rgba(200, 165, 104, 0.4)',
-              transition: 'all 0.3s ease',
+              boxShadow: '0 10px 40px rgba(102, 126, 234, 0.5), 0 0 20px rgba(240, 147, 251, 0.3)',
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
               letterSpacing: '0.02em'
             }}
             onMouseEnter={(e) => {
-              e.target.style.transform = 'translateY(-3px)';
-              e.target.style.boxShadow = '0 15px 40px rgba(200, 165, 104, 0.5)';
+              e.target.style.transform = 'translateY(-3px) scale(1.02)';
+              e.target.style.boxShadow = '0 15px 50px rgba(102, 126, 234, 0.6), 0 0 30px rgba(240, 147, 251, 0.5)';
             }}
             onMouseLeave={(e) => {
-              e.target.style.transform = 'translateY(0)';
-              e.target.style.boxShadow = '0 10px 30px rgba(200, 165, 104, 0.4)';
+              e.target.style.transform = 'translateY(0) scale(1)';
+              e.target.style.boxShadow = '0 10px 40px rgba(102, 126, 234, 0.5), 0 0 20px rgba(240, 147, 251, 0.3)';
             }}
           >
             {primaryCta.label}
@@ -139,25 +165,25 @@ export default function Hero({ props }) {
             href={secondaryCta.href}
             style={{
               display: 'inline-block',
-              padding: '1rem 2.5rem',
-              borderRadius: '0.75rem',
-              border: '2px solid white',
+              padding: '1.125rem 3rem',
+              borderRadius: '1rem',
+              border: '2px solid rgba(255, 255, 255, 0.2)',
               color: 'white',
               fontWeight: 700,
-              fontSize: '1.0625rem',
-              transition: 'all 0.3s ease',
+              fontSize: '1.125rem',
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
               letterSpacing: '0.02em',
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'rgba(255, 255, 255, 0.05)',
               backdropFilter: 'blur(10px)'
             }}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = 'white';
-              e.target.style.color = 'var(--accent-color)';
+              e.target.style.background = 'rgba(255, 255, 255, 0.15)';
+              e.target.style.borderColor = 'rgba(255, 255, 255, 0.4)';
               e.target.style.transform = 'translateY(-3px)';
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-              e.target.style.color = 'white';
+              e.target.style.background = 'rgba(255, 255, 255, 0.05)';
+              e.target.style.borderColor = 'rgba(255, 255, 255, 0.2)';
               e.target.style.transform = 'translateY(0)';
             }}
           >
@@ -166,9 +192,9 @@ export default function Hero({ props }) {
         </div>
 
         <div style={{
-          marginTop: '4rem',
+          marginTop: '5rem',
           animation: loaded ? 'float 3s ease-in-out infinite' : 'none',
-          opacity: 0.7
+          opacity: 0.6
         }}>
           <div style={{
             fontSize: '2rem',

@@ -28,9 +28,11 @@ export default function Navigation() {
       left: 0,
       right: 0,
       zIndex: 1000,
-      background: scrolled ? 'rgba(255, 255, 255, 0.98)' : 'transparent',
-      backdropFilter: scrolled ? 'blur(10px)' : 'none',
-      boxShadow: scrolled ? '0 2px 20px rgba(0, 0, 0, 0.08)' : 'none',
+      background: scrolled ? 'rgba(10, 14, 39, 0.8)' : 'transparent',
+      backdropFilter: scrolled ? 'blur(20px)' : 'none',
+      border: scrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+      borderTop: 'none',
+      boxShadow: scrolled ? '0 8px 32px 0 rgba(0, 0, 0, 0.2)' : 'none',
       transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
       padding: scrolled ? '0.75rem 0' : '1.5rem 0'
     }}>
@@ -49,7 +51,8 @@ export default function Navigation() {
             style={{
               height: scrolled ? '45px' : '55px',
               transition: 'height 0.4s ease',
-              filter: scrolled ? 'none' : 'drop-shadow(0 2px 8px rgba(255,255,255,0.3))'
+              mixBlendMode: 'screen',
+              filter: scrolled ? 'brightness(1.1) drop-shadow(0 4px 12px rgba(102, 126, 234, 0.4))' : 'brightness(1.2) drop-shadow(0 6px 16px rgba(240, 147, 251, 0.4))'
             }}
           />
         </a>
@@ -61,7 +64,7 @@ export default function Navigation() {
             background: 'none',
             border: 'none',
             fontSize: '1.5rem',
-            color: scrolled ? 'var(--text-color)' : 'white',
+            color: 'white',
             cursor: 'pointer'
           }}
           className="mobile-menu-btn"
@@ -81,16 +84,16 @@ export default function Navigation() {
               style={{
                 fontSize: '0.9375rem',
                 fontWeight: 500,
-                color: scrolled ? 'var(--text-color)' : 'white',
+                color: 'white',
                 transition: 'all 0.3s ease',
                 position: 'relative',
                 letterSpacing: '0.01em'
               }}
               onMouseEnter={(e) => {
-                e.target.style.color = 'var(--gold)';
+                e.target.style.color = '#f093fb';
               }}
               onMouseLeave={(e) => {
-                e.target.style.color = scrolled ? 'var(--text-color)' : 'white';
+                e.target.style.color = 'white';
               }}
             >
               {link.label}
@@ -99,22 +102,22 @@ export default function Navigation() {
           <a
             href="#contact"
             style={{
-              padding: '0.625rem 1.5rem',
-              backgroundColor: 'var(--gold)',
+              padding: '0.625rem 1.75rem',
+              background: 'linear-gradient(135deg, #667eea 0%, #f093fb 100%)',
               color: 'white',
-              borderRadius: '0.5rem',
+              borderRadius: '0.75rem',
               fontWeight: 600,
               fontSize: '0.9375rem',
               transition: 'all 0.3s ease',
-              boxShadow: '0 4px 12px rgba(200, 165, 104, 0.3)'
+              boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)'
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'translateY(-2px)';
-              e.target.style.boxShadow = '0 6px 16px rgba(200, 165, 104, 0.4)';
+              e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.5)';
             }}
             onMouseLeave={(e) => {
               e.target.style.transform = 'translateY(0)';
-              e.target.style.boxShadow = '0 4px 12px rgba(200, 165, 104, 0.3)';
+              e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.4)';
             }}
           >
             Get Quote
@@ -134,13 +137,12 @@ export default function Navigation() {
             left: 0;
             right: 0;
             flex-direction: column;
-            background: white;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
             padding: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
             gap: 1rem !important;
-          }
-          .desktop-nav a {
-            color: var(--text-color) !important;
           }
         }
       `}</style>
