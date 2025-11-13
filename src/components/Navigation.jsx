@@ -51,8 +51,7 @@ export default function Navigation() {
             style={{
               height: scrolled ? '45px' : '55px',
               transition: 'height 0.4s ease',
-              mixBlendMode: 'screen',
-              filter: scrolled ? 'brightness(1.1) drop-shadow(0 4px 12px rgba(102, 126, 234, 0.4))' : 'brightness(1.2) drop-shadow(0 6px 16px rgba(240, 147, 251, 0.4))'
+              filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%) drop-shadow(0 4px 12px rgba(102, 126, 234, 0.5))'
             }}
           />
         </a>

@@ -11,23 +11,25 @@ export default function Hero({ props }) {
   return (
     <section
       style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
         position: 'relative',
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '80px',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%)'
       }}
     >
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(26, 31, 58, 0.9) 50%, rgba(102, 126, 234, 0.3) 100%)'
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        opacity: 0.15,
+        mixBlendMode: 'overlay'
       }} />
 
       <div style={{
@@ -65,11 +67,6 @@ export default function Hero({ props }) {
         <div style={{
           marginBottom: '2.5rem',
           animation: loaded ? 'scaleIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards' : 'none',
-          background: 'rgba(255, 255, 255, 0.03)',
-          backdropFilter: 'blur(20px)',
-          padding: '2rem',
-          borderRadius: '2rem',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
           display: 'inline-block'
         }}>
           <img
@@ -80,8 +77,7 @@ export default function Hero({ props }) {
               width: '100%',
               height: 'auto',
               margin: '0 auto',
-              mixBlendMode: 'screen',
-              filter: 'brightness(1.2) contrast(1.1) drop-shadow(0 20px 40px rgba(102, 126, 234, 0.4)) drop-shadow(0 10px 20px rgba(240, 147, 251, 0.3))'
+              filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%) drop-shadow(0 20px 40px rgba(102, 126, 234, 0.6)) drop-shadow(0 10px 20px rgba(240, 147, 251, 0.4))'
             }}
           />
         </div>
