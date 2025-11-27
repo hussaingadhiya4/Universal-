@@ -47,11 +47,15 @@ export default function Navigation() {
       }}>
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <span style={{
-            fontSize: scrolled ? '1.25rem' : '1.5rem',
-            fontWeight: 800,
-            color: 'white',
-            letterSpacing: '0.1em',
-            transition: 'all 0.4s ease'
+            fontSize: scrolled ? 'clamp(0.75rem, 1.5vw, 0.95rem)' : 'clamp(0.875rem, 2vw, 1.125rem)',
+            letterSpacing: '0.3em',
+            background: 'linear-gradient(135deg, #ffd89b 0%, #f093fb 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            fontWeight: 700,
+            transition: 'all 0.4s ease',
+            textTransform: 'uppercase'
           }}>
             UNIVERSAL
           </span>

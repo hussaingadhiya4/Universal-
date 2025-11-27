@@ -38,7 +38,7 @@ export default function Process({ props }) {
           <h2 style={{
             fontSize: 'clamp(2rem, 4vw, 3.5rem)',
             fontWeight: 900,
-            color: 'var(--text-color)',
+            color: '#1a202c',
             marginBottom: '1.5rem',
             lineHeight: 1.2
           }}>
@@ -81,32 +81,33 @@ export default function Process({ props }) {
               <div style={{
                 position: 'absolute',
                 left: '0.5rem',
-                top: '0.75rem',
-                width: '2.5rem',
-                height: '2.5rem',
+                top: '0.5rem',
+                width: '2rem',
+                height: '2rem',
                 borderRadius: '50%',
                 background: 'linear-gradient(135deg, #667eea 0%, #4facfe 100%)',
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: 'white',
-                fontWeight: 800,
-                fontSize: '1rem',
-                boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)',
+                fontWeight: 700,
+                fontSize: '0.875rem',
+                boxShadow: '0 3px 10px rgba(102, 126, 234, 0.25)',
                 display: window.innerWidth > 768 ? 'flex' : 'none',
-                border: '3px solid white'
+                border: '2px solid white'
               }}>
                 {idx + 1}
               </div>
 
               <div style={{
                 background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
-                borderRadius: '1rem',
-                padding: '1.5rem',
-                boxShadow: '0 5px 20px rgba(0, 0, 0, 0.06)',
-                border: '1px solid rgba(102, 126, 234, 0.1)',
+                borderRadius: '0.875rem',
+                padding: '1.25rem 1.5rem',
+                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)',
+                border: '1px solid rgba(102, 126, 234, 0.08)',
                 transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 position: 'relative',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                minHeight: '140px'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = '0 20px 60px rgba(102, 126, 234, 0.2)';

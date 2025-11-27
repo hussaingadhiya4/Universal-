@@ -56,7 +56,7 @@ export default function Feature({ props }) {
         </div>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '2rem'
         }}>
           {features.map((feature, idx) => (
@@ -70,7 +70,10 @@ export default function Feature({ props }) {
                 boxShadow: '0 8px 30px rgba(0, 0, 0, 0.06)',
                 border: '1px solid rgba(102, 126, 234, 0.1)',
                 position: 'relative',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column',
+                minHeight: '320px'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-12px) scale(1.02)';
