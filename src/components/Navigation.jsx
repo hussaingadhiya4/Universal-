@@ -46,15 +46,15 @@ export default function Navigation() {
         justifyContent: 'space-between'
       }}>
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <TransparentLogo
-            src="/Final approved image.jpg"
-            alt="Universal"
-            style={{
-              height: scrolled ? '60px' : '75px',
-              transition: 'height 0.4s ease',
-              filter: 'drop-shadow(0 4px 12px rgba(102, 126, 234, 0.5))'
-            }}
-          />
+          <span style={{
+            fontSize: scrolled ? '1.25rem' : '1.5rem',
+            fontWeight: 800,
+            color: 'white',
+            letterSpacing: '0.1em',
+            transition: 'all 0.4s ease'
+          }}>
+            UNIVERSAL
+          </span>
         </a>
 
         <button

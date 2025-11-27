@@ -68,6 +68,25 @@ export default function Hero({ props }) {
         animation: loaded ? 'fadeInUp 1.5s ease forwards' : 'none'
       }}>
         <div style={{
+          position: 'absolute',
+          left: '-80px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          writingMode: 'vertical-rl',
+          textOrientation: 'mixed',
+          fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
+          fontWeight: 900,
+          letterSpacing: '0.3em',
+          background: 'linear-gradient(180deg, #667eea 0%, #f093fb 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          opacity: 0.4,
+          animation: loaded ? 'fadeIn 2s ease 0.5s forwards' : 'none'
+        }}>
+          UNIVERSAL
+        </div>
+        <div style={{
           textAlign: 'left'
         }}>
           <div style={{
@@ -260,33 +279,6 @@ export default function Hero({ props }) {
             </div>
           </div>
 
-          <div style={{
-            position: 'absolute',
-            top: '-20px',
-            right: '-20px',
-            padding: '1.5rem 2rem',
-            background: 'linear-gradient(135deg, #667eea 0%, #f093fb 100%)',
-            borderRadius: '1rem',
-            boxShadow: '0 15px 40px rgba(102, 126, 234, 0.6)',
-            animation: 'pulse 4s ease-in-out infinite'
-          }}>
-            <div style={{
-              fontSize: '1.75rem',
-              fontWeight: 900,
-              color: 'white',
-              lineHeight: 1
-            }}>
-              150+
-            </div>
-            <div style={{
-              fontSize: '0.875rem',
-              color: 'rgba(255, 255, 255, 0.9)',
-              fontWeight: 600,
-              marginTop: '0.25rem'
-            }}>
-              Countries
-            </div>
-          </div>
         </div>
       </div>
     </section>

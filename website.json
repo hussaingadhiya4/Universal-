@@ -54,10 +54,10 @@
           "type": "stats",
           "props": {
             "stats": [
-              { "value": "50+", "label": "Countries Served" },
-              { "value": "10K+", "label": "Successful Shipments" },
-              { "value": "500+", "label": "Global Partners" },
-              { "value": "15+", "label": "Years Experience" }
+              { "value": "🌱", "label": "Early-Stage Startup" },
+              { "value": "🤝", "label": "Building Partnerships" },
+              { "value": "🚀", "label": "Ready to Grow" },
+              { "value": "💼", "label": "Focused on Quality" }
             ]
           }
         },
@@ -69,7 +69,7 @@
             "title": "Building Bridges in Global Trade",
             "description": "Universal specializes in the import and export of high-quality products across diverse industries. With strategic partnerships spanning continents, we facilitate seamless international transactions, ensuring your goods reach their destination efficiently and reliably.",
             "features": [
-              { "icon": "🌍", "title": "Global Network", "text": "Extensive partnerships across Asia, Europe, Middle East, Africa, and the Americas." },
+              { "icon": "🌍", "title": "Global Network", "text": "Building strategic partnerships across Asia, Europe, Middle East, Africa, and the Americas." },
               { "icon": "📦", "title": "Quality Products", "text": "Rigorous supplier vetting and quality control at every stage of the supply chain." },
               { "icon": "🚢", "title": "Logistics Excellence", "text": "Streamlined shipping, customs clearance, and door-to-door delivery solutions." },
               { "icon": "⚡", "title": "Swift Operations", "text": "Fast turnaround times with real-time tracking and transparent communication." }
@@ -166,7 +166,7 @@
             "anchor": "why",
             "title": "Why Choose Universal?",
             "points": [
-              { "title": "Proven Track Record", "text": "Over 15 years of excellence in international trade with thousands of successful transactions." },
+              { "title": "Fresh Perspective", "text": "A new approach to international trade focused on transparency, reliability, and building lasting relationships." },
               { "title": "Competitive Pricing", "text": "Direct relationships with manufacturers and bulk purchasing power translate to better rates for you." },
               { "title": "Risk Management", "text": "Comprehensive insurance coverage and secure payment terms protect your investment." },
               { "title": "Personalized Service", "text": "Dedicated account managers who understand your business and anticipate your needs." },
@@ -189,37 +189,6 @@
               { "name": "Europe", "countries": "UK, Germany, Netherlands, Italy, Spain", "icon": "🏰" },
               { "name": "Africa", "countries": "South Africa, Kenya, Nigeria, Egypt", "icon": "🦁" },
               { "name": "Americas", "countries": "USA, Canada, Brazil, Mexico", "icon": "🌎" }
-            ]
-          }
-        },
-        {
-          "id": "testimonials",
-          "type": "testimonials",
-          "props": {
-            "anchor": "testimonials",
-            "title": "What Our Partners Say",
-            "items": [
-              {
-                "quote": "Universal has been instrumental in helping us source quality electronics from Asia. Their attention to detail and transparent communication sets them apart.",
-                "name": "Michael Chen",
-                "company": "TechVision Distributors",
-                "location": "Singapore",
-                "photo": "PLACEHOLDER_TESTIMONIAL_PHOTO_1"
-              },
-              {
-                "quote": "We've been working with Universal for over 5 years on textile imports. Their reliability and competitive pricing keep us coming back.",
-                "name": "Priya Sharma",
-                "company": "Fabric World Inc.",
-                "location": "Mumbai, India",
-                "photo": "PLACEHOLDER_TESTIMONIAL_PHOTO_2"
-              },
-              {
-                "quote": "From initial inquiry to final delivery, Universal handled everything professionally. They made international trade feel effortless.",
-                "name": "Ahmed Al-Rashid",
-                "company": "Gulf Trading Co.",
-                "location": "Dubai, UAE",
-                "photo": "PLACEHOLDER_TESTIMONIAL_PHOTO_3"
-              }
             ]
           }
         },
