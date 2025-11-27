@@ -74,14 +74,14 @@ export default function Hero({ props }) {
           transform: 'translateY(-50%)',
           writingMode: 'vertical-rl',
           textOrientation: 'mixed',
-          fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
-          fontWeight: 900,
+          fontSize: 'clamp(0.875rem, 2vw, 1.125rem)',
+          fontWeight: 700,
           letterSpacing: '0.3em',
-          background: 'linear-gradient(180deg, #667eea 0%, #f093fb 100%)',
+          background: 'linear-gradient(180deg, #ffd89b 0%, #f093fb 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
-          opacity: 0.4,
+          opacity: 1,
           animation: loaded ? 'fadeIn 2s ease 0.5s forwards' : 'none'
         }}>
           UNIVERSAL

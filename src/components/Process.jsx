@@ -80,30 +80,30 @@ export default function Process({ props }) {
             >
               <div style={{
                 position: 'absolute',
-                left: '0.75rem',
-                top: '1rem',
-                width: '3.5rem',
-                height: '3.5rem',
+                left: '0.5rem',
+                top: '0.75rem',
+                width: '2.5rem',
+                height: '2.5rem',
                 borderRadius: '50%',
                 background: 'linear-gradient(135deg, #667eea 0%, #4facfe 100%)',
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: 'white',
-                fontWeight: 900,
-                fontSize: '1.25rem',
-                boxShadow: '0 8px 25px rgba(102, 126, 234, 0.4)',
+                fontWeight: 800,
+                fontSize: '1rem',
+                boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)',
                 display: window.innerWidth > 768 ? 'flex' : 'none',
-                border: '4px solid white'
+                border: '3px solid white'
               }}>
                 {idx + 1}
               </div>
 
               <div style={{
                 background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
-                borderRadius: '1.5rem',
-                padding: '2.5rem',
-                boxShadow: '0 10px 40px rgba(0, 0, 0, 0.08)',
-                border: '2px solid rgba(102, 126, 234, 0.1)',
+                borderRadius: '1rem',
+                padding: '1.5rem',
+                boxShadow: '0 5px 20px rgba(0, 0, 0, 0.06)',
+                border: '1px solid rgba(102, 126, 234, 0.1)',
                 transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 position: 'relative',
                 overflow: 'hidden'

@@ -85,22 +85,10 @@
             "subtitle": "Diverse product categories sourced from trusted manufacturers and distributed to global markets.",
             "categories": [
               {
-                "title": "Electronics & Technology",
-                "description": "Consumer electronics, computer hardware, telecommunication equipment, and smart devices from leading manufacturers.",
-                "image": "PLACEHOLDER_ELECTRONICS_IMAGE",
-                "icon": "💻"
-              },
-              {
                 "title": "Textiles & Apparel",
                 "description": "Premium fabrics, garments, home textiles, and fashion accessories meeting international quality standards.",
                 "image": "PLACEHOLDER_TEXTILES_IMAGE",
                 "icon": "👔"
-              },
-              {
-                "title": "Industrial Equipment",
-                "description": "Machinery, tools, components, and industrial supplies for manufacturing and construction sectors.",
-                "image": "PLACEHOLDER_INDUSTRIAL_IMAGE",
-                "icon": "⚙️"
               },
               {
                 "title": "Agricultural Products",
@@ -182,13 +170,12 @@
           "props": {
             "anchor": "regions",
             "title": "Our Global Presence",
-            "description": "Operating across multiple continents with established networks in key trade hubs.",
+            "description": "Building strategic trade networks in key markets.",
             "regions": [
-              { "name": "Asia Pacific", "countries": "India, China, Vietnam, Thailand, Indonesia", "icon": "🌏" },
-              { "name": "Middle East", "countries": "UAE, Saudi Arabia, Qatar, Oman", "icon": "🕌" },
-              { "name": "Europe", "countries": "UK, Germany, Netherlands, Italy, Spain", "icon": "🏰" },
-              { "name": "Africa", "countries": "South Africa, Kenya, Nigeria, Egypt", "icon": "🦁" },
-              { "name": "Americas", "countries": "USA, Canada, Brazil, Mexico", "icon": "🌎" }
+              { "name": "India", "countries": "Mumbai, Delhi, Bangalore", "icon": "🇮🇳" },
+              { "name": "China", "countries": "Shanghai, Shenzhen, Beijing", "icon": "🇨🇳" },
+              { "name": "GCC Countries", "countries": "UAE, Saudi Arabia, Qatar", "icon": "🕌" },
+              { "name": "South Africa", "countries": "Johannesburg, Cape Town, Durban", "icon": "🇿🇦" }
             ]
           }
         },
