@@ -50,7 +50,7 @@ export default function Navigation() {
             src="/Final approved image.jpg"
             alt="Universal"
             style={{
-              height: scrolled ? '45px' : '55px',
+              height: scrolled ? '60px' : '75px',
               transition: 'height 0.4s ease',
               filter: 'drop-shadow(0 4px 12px rgba(102, 126, 234, 0.5))'
             }}

@@ -75,7 +75,7 @@ export default function Process({ props }) {
               style={{
                 position: 'relative',
                 paddingLeft: window.innerWidth > 768 ? '6rem' : '0',
-                marginBottom: idx < steps.length - 1 ? '3rem' : '0'
+                marginBottom: idx < steps.length - 1 ? '1.5rem' : '0'
               }}
             >
               <div style={{

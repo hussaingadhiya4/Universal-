@@ -38,7 +38,7 @@ export default function Feature({ props }) {
           <h2 style={{
             fontSize: 'clamp(2rem, 4vw, 3.5rem)',
             fontWeight: 900,
-            color: 'var(--text-color)',
+            color: '#1a202c',
             marginBottom: '1.5rem',
             lineHeight: 1.2
           }}>
